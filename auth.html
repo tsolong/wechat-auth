@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <title>微信授权</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<p>下面是【左龙的微信测试号】，授权前请关注下面测试公众号</p>
+
+<p><img src="images/qrcode.jpg" style="width: 200px;"></p>
+
+<h1>请选择授权方式</h1>
+
+<div>
+    <label><input type="radio" name="authType" value="snsapi_base" disabled>系统静默授权（只能拿到用户openid）</label>
+</div>
+<div>
+    <label><input type="radio" name="authType" value="snsapi_userinfo" checked>用户手动授权（可同时拿到openid和用户信息）</label>
+</div>
+
+<div class="footer-btn">
+    <button id="authBtn" class="btn" type="button">开始微信授权</button>
+</div>
+
+<script src="js/lib/jquery-2.2.0.min.js"></script>
+<script src="js/lib/purl.js"></script>
+<script src="js/lib/jweixin-1.2.0.js"></script>
+<script src="js/common/config.js"></script>
+<script src="js/common/common.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
